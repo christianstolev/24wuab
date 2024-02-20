@@ -1,0 +1,50 @@
+body {
+    margin: 0;    
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    background: linear-gradient(135deg, #444cf700 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #8634347a 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #79082200 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #3a0410 25%, #000 25%) 0px 0/ 20px 20px;
+    overflow-x: hidden;
+    width: 100%;
+}
+nav {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    border-bottom: 2px solid #761616;
+}
+
+.relative {
+    position: relative;
+}
+
+.fa-bars {
+    width: 28px;
+    height: 28px;
+    color: rgb(205, 205, 205);
+    float: right;
+    top: 30px;
+    right: 10px;
+}
+
+h2 {
+    color: white;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+}
+
+footer {
+    display: block;
+
+    margin-top: 60px;
+    height: 70px;
+    background-color: black;
+}
