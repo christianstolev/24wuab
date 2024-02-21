@@ -17,10 +17,22 @@
 <body>
   <nav>
     <i class="fa-brands fa-codepen fa-2xl relative" style="color: #cfcfcf; top: 22px; left: 15px;"></i>
-    <i class="fa-solid fa-bars fa-2xl relative"></i>
+    <ul class="NavBar">
+      <li>Home</li>
+      <li>Tools & Products</li>
+      <li>Our Team</li>
+      <li>Contact us</li>
+    </ul>
+    <div class="burger-icon"><i onclick="document.getElementById('mobile-navbar').classList.toggle('visible')" class="fa-solid fa-bars fa-2xl relative bars-icon"></i></div>
   </nav>
+  <ul id="mobile-navbar" class="mobile-navbar">
+    <li>Home</li>
+    <li>Tools & Products</li>
+    <li>Our Team</li>
+    <li>Contact us</li>
+  </ul>
   <div class="page-wrap">
-    <h2>Choose your <span style="color: #E43268; text-shadow: #E43268 1px 1px 5px; font-weight: 800;">platform</span>.</h2>
+    <h2>Choose your <span style="color: #448cdad5; text-shadow: #5c94cff0 1px 1px 5px; font-weight: 800;">platform</span>.</h2>
     <section class="platform-section"> <!-- List platforms -->
       <div class="platforms">
         <div class="div1">
@@ -92,9 +104,8 @@
         </div>
       </div>
     </div>
-    <h2>Looking for <span style="color: #E43268; text-shadow: #E43268 1px 1px 5px;">something</span> else?</h2>
-    <h2>Whatever you <span style="color: #E43268; text-shadow: #E43268 1px 1px 5px;">need</span>.</h2>
-    <h3 class="relative" style="top: -20px">We can <span style="color: #E43268; text-shadow: #E43268 1px 1px 5px;">make</span> it happen.</h3>
+    <h2>Whatever you <span style="color: #448cdad5; text-shadow: #5c94cff0 1px 1px 5px;">need</span>.</h2>
+    <h3 class="relative" style="top: -20px">We can <span style="color: #448cdad5; text-shadow: #5c94cff0 1px 1px 5px;">make</span> it happen.</h3>
     <button class="contact-us">Contact us</button>
   </div>
   

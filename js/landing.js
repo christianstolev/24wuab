@@ -133,12 +133,14 @@ $(document).ready(function() {
             
             /* Apply the calculated transformation */
             el.style.transform = string
+            el.style.background = "linear-gradient(" +((xVal - width / 2)) + "deg, #326dac90, transparent)"
         }
 
         /* Add listener for mouseout event, remove the rotation */
         el.addEventListener('mouseout', function() {
         el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)'
         el.parentElement.style.zIndex = 0
+        el.style.background = "rgba(0, 0, 0, 0.025)"
         })
 
         /* Add listener for mousedown event, to simulate click */

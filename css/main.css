@@ -6,9 +6,31 @@ html, body {
 }
 
 html {
-    background: linear-gradient(135deg, #444cf700 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #86343417 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #79082200 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #100508 25%, #000 25%) 0px 0/ 20px 20px;
+    background: linear-gradient(135deg, #444cf700 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #20145c1f 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #79082200 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #06070c 25%, #000 25%) 0px 0/ 20px 20px;
     width: 100%;
     scroll-behavior: smooth;
+}
+.mobile-navbar{
+    color: white;text-decoration: none;
+    display: none;
+    list-style: none;
+    gap: 1rem;
+    box-sizing: border-box;
+    margin-left: auto;
+    align-items:center;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+    margin-right: 0px !important;
+    flex-direction: column;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+
+}
+
+.visible {
+    display: flex !important;
 }
 body {
     height: auto;
@@ -17,21 +39,73 @@ nav {
     height: 60px;
     width: 100%;
     background-color: black;
-    border-bottom: 2px solid #e4326745;
+    border-bottom: 2px solid #3295e445;
 }
 
-.relative {
+.NavBar {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    box-sizing: border-box;
+    margin-left: auto;
+    align-items: baseline;
+    align-content: flex-end;
+    justify-content: end;
     position: relative;
+    top: -15px;
+    padding-right: 20px;
+    margin-right: 0px !important;
+    flex-direction: row;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
 }
 
-.fa-bars {
+.NavBar li {
+    cursor: pointer;
+}
+
+.burger-icon {
+    position: absolute !important;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 62px;
+
+    box-sizing: border-box;
+    margin-left: auto;
+    align-items: baseline;
+    align-content: flex-end;
+    justify-content: end;
+    position: relative;
+    padding-right: 20px;
+    margin-right: 0px !important;
+    flex-direction: row;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+}
+.bars-icon {
+    cursor: pointer !important;
+    display: flex !important;
     width: 28px;
     height: 28px;
     color: rgb(205, 205, 205);
     float: right;
     top: 30px;
     right: 10px;
+    
+
 }
+
+.NavBar li:hover {
+    text-shadow: #5b73c9 1px 1px 3px;
+}
+.relative {
+    position: relative;
+}
+
 
 h2 {
     color: white;
