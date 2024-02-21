@@ -123,10 +123,10 @@ $(document).ready(function() {
                 * Control the rotation
                 * You can change the value and see the results
                 */
-            const yRotation = 30 * ((xVal - width / 2) / width)
+            const yRotation = -30 * ((xVal - width / 2) / width)
             
             /* Calculate the rotation along the X-axis */
-            const xRotation = -30 * ((yVal - height / 2) / height)
+            const xRotation = 30 * ((yVal - height / 2) / height)
             
             /* Generate string for CSS transform property */
             const string = 'perspective(500px) scale(1.2) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)'

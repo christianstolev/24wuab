@@ -111,6 +111,11 @@
     .divider {
         margin-top: 60px;
     }
+
+    .platform {
+        transition: all 0.5s ease-in-out;
+        transition-property: box-shadow, border, backdropfilter, transform, background-color;
+    }
 }
 
 @media (min-width: 1030px) and (max-width: 2000px) {
