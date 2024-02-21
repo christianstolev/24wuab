@@ -25,6 +25,8 @@
     border-radius: 5px;
 
     display: block;
+    margin-bottom: 100px;
+
     text-align: center;
     color: rgb(172, 172, 172);
     font-family: Poppins, sans-serif;
@@ -62,6 +64,7 @@
 .divider {
     margin-top: 30px;
     height: 60px;
+    overflow: hidden;
     background-color: black;
 }
 
@@ -76,31 +79,60 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    transition-property: box-shadow, border, backdropfilter, transform;
 }
 
 .platform:hover {
     backdrop-filter: blur(15px);
     border: 1px solid #e432673e;
     box-shadow: 0 4px 30px #e4326790;
+    background: linear-gradient(45deg, #8d2e2e, transparent);
 }
 
-@media (min-width: 0px) and (max-width: 680px) {
-    .platforms {
-        width: 90%;
-    }
-}
-
-@media (min-width: 1030px) and (max-width: 2000px) {
-    .platforms {
-        width: 30%;
-    }
+.on-big-window {
+    visibility: hidden;
+    display: none;
 }
 
 .platforms .div1 { grid-area: 1 / 1 / 2 / 2; }
 .platforms .div2 { grid-area: 1 / 2 / 2 / 3; }
 .platforms .div3 { grid-area: 2 / 1 / 3 / 2; }
 .platforms .div4 { grid-area: 2 / 2 / 3 / 3; }
+
+@media (min-width: 0px) and (max-width: 680px) {
+    .platforms {
+        width: 90%;
+    }
+    .platforms .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .platforms .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .platforms .div3 { grid-area: 2 / 1 / 3 / 2; }
+    .platforms .div4 { grid-area: 2 / 2 / 3 / 3; }
+    .divider {
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 1030px) and (max-width: 2000px) {
+    .platforms {
+        width: 50%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .on-big-window {
+        visibility: visible;
+        display: block;
+    }
+    .platform-section {
+        height: 350px;
+    }
+    .divider {
+        margin-top: 0px;
+    }
+    
+    .platforms .div3 { grid-area: 1 / 3 / 2 / 3; }
+    .platforms .div4 { grid-area: 1 / 4 / 2 / 4; }
+}
 
 .icon-holder {
     display: flex; 
@@ -113,6 +145,31 @@
     margin-left: auto;
     height: 70px;
     margin-top: 30px;
+}
+
+.platform ul {
+    color: rgba(255, 255, 255, 0.734);
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+
+    position: relative;
+    padding-left: 28px;
+    top: -10px;
+}
+.platform button {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid #121212;
+    background-color: #00000052;
+    color: white;
+    font-family: Poppins, sans-serif;
+}
+.platform button:hover {
+    background-color: #0000009f;
 }
 
 .platforms h3 {
