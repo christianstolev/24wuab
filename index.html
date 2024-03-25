@@ -18,17 +18,17 @@
   <nav>
     <i class="fa-brands fa-codepen fa-2xl relative" style="color: #cfcfcf; top: 22px; left: 15px;"></i>
     <ul class="NavBar">
-      <li>Home</li>
+      <li><a href="/index.html">Home</a></li>
       <li>Tools & Products</li>
-      <li>Our Team</li>
-      <li>Contact us</li>
+      <li><a href="/team.html">Our Team</a></li>
+      <li><a href="/contact.html">Contact us</a></li>
     </ul>
     <div class="burger-icon"><i onclick="document.getElementById('mobile-navbar').classList.toggle('visible')" class="fa-solid fa-bars fa-2xl relative bars-icon"></i></div>
   </nav>
   <ul id="mobile-navbar" class="mobile-navbar">
-    <li>Home</li>
+    <li><a href="/index.html">Home</a></li>
     <li>Tools & Products</li>
-    <li>Our Team</li>
+    <li><a href="/team.html">Our Team</a></li>
     <li>Contact us</li>
   </ul>
   <div class="page-wrap">
@@ -36,7 +36,7 @@
     <section class="platform-section"> <!-- List platforms -->
       <div class="platforms">
         <div class="div1">
-          <div class="platform" onclick="">
+          <div class="platform" onclick="window.location.href = '/platform_windows.html'">
             <div class="icon-holder">
               <i class="fa-brands fa-windows fa-5x relative"></i>
             </div>
@@ -51,7 +51,7 @@
           </div>
         </div>
         <div class="div2">
-          <div class="platform" onclick="">
+          <div class="platform" onclick="window.location.href = '/platform_android.html'">
             <div class="icon-holder">
               <i class="fa-brands fa-android fa-5x relative"></i>
             </div>
@@ -66,7 +66,7 @@
           </div>
         </div>
         <div class="div3">
-          <div class="platform" onclick="">
+          <div class="platform"  onclick="window.location.href = '/platform_ios.html'">
             <div class="icon-holder">
               <i class="fa-brands fa-apple fa-5x relative"></i>
             </div>
@@ -81,7 +81,7 @@
           </div>
         </div>
         <div class="div4">
-          <div class="platform" onclick="">
+          <div class="platform"  onclick="window.location.href = '/platform_ios.html'">
             <div class="icon-holder">
               <i class="fa-brands fa-chrome fa-5x relative"></i>
             </div>
@@ -106,7 +106,7 @@
     </div>
     <h2>Whatever you <span style="color: #448cdad5; text-shadow: #5c94cff0 1px 1px 5px;">need</span>.</h2>
     <h3 class="relative" style="top: -20px">We can <span style="color: #448cdad5; text-shadow: #5c94cff0 1px 1px 5px;">make</span> it happen.</h3>
-    <button class="contact-us">Contact us</button>
+    <button class="contact-us" onclick="window.location='/contact.html'">Contact us</button>
   </div>
   
   <footer>
